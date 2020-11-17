@@ -1,4 +1,4 @@
-# Settled
+# Settled 👋
 
 ### About 
 
