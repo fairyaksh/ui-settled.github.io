@@ -2,7 +2,8 @@
 
 ### About 
 
-The final **coded** UI for Settled's tech test. 
+Original UI sent to me can be viewed [here](https://www.figma.com/file/IFGIZAfVWsIh7C7aX1i98l/UI-engineer-test--1?node-id=0%3A1).
+<br> The final **coded** UI for Settled's tech test. 
 Can be viewed [here](https://fairyaksh.github.io/ui-settled.github.io/).
 
 I have also created a 'revamped' version of the figma prototype as I saw fit - can be viewed [here](https://www.figma.com/file/hjuQreCZrZuHjc4E5NDaMF/UI-engineer-test---Akshaya's-Remake?node-id=0%3A1).
