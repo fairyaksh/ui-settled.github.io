@@ -1,0 +1,189 @@
+/* ----- General Documentation styles ----- */
+
+:root {
+    --main-font-family: 'Rubik', sans-serif;
+    --main-font-color: rgba(47, 46, 66, 1);
+    --faded-font-color: rgba(47, 46, 66, 0.9);
+    --main-theme-color: rgba(100, 114, 225, 1);
+    --alert-color: rgba(255, 242, 198, 1);
+    --progress-value: rgba(235, 132, 218, 1);
+    --progress-bar: rgba(47, 46, 66, 0.08);
+}
+body {
+    font-family: var(--main-font-family);
+    color: var(--main-font-color);
+    padding: 32px;
+}
+
+/* ----- Navigation area ----- */
+h1 {
+    font-weight: 500;
+    font-size: 30px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 18px;
+    margin-top: 32px;
+    cursor: pointer;
+    position: relative;
+}
+
+.active-subtitle {
+    font-weight: 500;
+}
+
+.active-subtitle::after {
+    content: "";
+    margin-top: 4px;
+    background-color: var(--main-theme-color);
+    display: block;
+    height: 4px;
+    width: 45px;
+    border-radius: 4px;
+}
+
+/* ----- Alert Section ----- */
+.alert-box {
+    width: 350px;
+    height: 80px;
+    background-color: var(--alert-color);
+    border-radius: 24px;
+    position: relative;
+    margin-top: 40px;
+}
+
+.faded-text {
+    font-weight: 500;
+    color: var(--faded-font-color); 
+    position: absolute;
+    padding: 16px;
+    margin: 0 auto;
+}
+
+p span {
+    display: block;
+}
+
+/* ----- Progress Tracker Section ----- */
+.progress-wrapper {
+    margin-top: 40px;
+}
+.progress-info {
+    display: flex;
+}
+.progress-number {
+    margin-left: 165px;
+}
+h3 {
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+progress {
+    border-radius: 4px;
+    width: 280px;
+}
+/* -- Chrome and Safari -- */
+progress::-webkit-progress-bar {
+    background: var(--progress-bar);
+    border-radius: 4px;
+    height: 8px;
+    width: 350px;
+}
+progress::-webkit-progress-value {
+    background: var(--progress-value);
+    border-radius: 4px;
+}
+/* -- Moz Firefox -- */
+progress::-moz-progress-bar {
+    background: var(--progress-bar);
+    border-radius: 4px;
+    height: 8px;
+    width: 350px;
+}
+progress::-moz-progress-value {
+    background: var(--progress-value);
+    border-radius: 4px;
+}
+
+/* ----- Distance Form ----- */
+.distance-text {
+    font-weight: 500;
+    color: var(--faded-font-color); 
+    position: absolute;
+    padding: 16px;
+    margin: 0 auto;
+}
+.distance-form {
+    margin-top: 32px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+form > p {
+    font-size: 14px;
+}
+.input-wrapper {
+    margin-top: 9px;
+}
+input[type=text] {
+    background: rgba(47, 46, 66, 0.08);
+    border: 2px solid rgba(47, 46, 66, 0.08);
+    box-sizing: border-box;
+    border-radius: 24px;
+    width: 140px;
+    height: 48px;
+}
+input[type=button] {
+    background-color: var(--main-theme-color);
+    border-radius: 24px;
+    width: 107px;
+    height: 48px;
+    border: 0;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* ----- FAQ Button ----- */
+.button-wrapper {
+    text-align: center;    
+}
+button {
+    background-color: rgb(255, 255, 255);
+    color: var(--main-theme-color);
+    font-weight: 600;
+    font-size: 18px;
+    border: 2px solid var(--main-theme-color);
+    border-radius: 24px;
+    width: 220px;
+    height: 48px;
+    margin-top: 100px;
+}
+
+/* ----- Extra styles I've added ----- */
+
+.inactive:before {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 4px;
+    width: 0;
+    border-radius: 4px;
+
+    position: absolute;
+    background-color: var(--main-theme-color);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  }
+  .inactive:hover:before { 
+    width: 70%; 
+    left: 0; 
+  }
