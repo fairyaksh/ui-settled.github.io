@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI Engineer Test</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap">
+</head>
+<body>
+    <header>
+        <h1>My profile</h1>
+        <p>Your running progress and goals.</p>
+        <nav aria-labelledby="primary-navigation">
+            <h2 class="active-subtitle">Activity</h2>
+            <h2 class="inactive">Statistics</h2>
+            <h2 class="inactive">Goals</h2>
+        </nav>
+    </header>
+    <main>
+        <div class="alert-box">
+            <p class="faded-text">
+                <span>You’ve nearly reached your</span>
+                <span>target! 🙌</span>
+            </p>
+        </div>
+        <div class="progress-wrapper">
+            <div class="progress-info">
+                <h3>20k weekly target</h3>
+                <p class="progress-number">80%</p>
+            </div>
+            <progress value="80" max="100"></progress>
+        </div>
+        <div class="distance-form">
+            <form>
+                    <label for="distance" >Your run distance</label>
+                    <div class="input-wrapper">
+                        <input type="text" id="distance" name="distance">
+                        <input type="button" value="Save">
+                </div>
+                <p>Enter your distance in kilometres.</p>
+            </form>
+        </div>
+        <div class="button-wrapper">
+            <button>
+                Read our FAQs
+            </button>
+        </div>
+
+    </main>
+
+
+</body>
+</html>
