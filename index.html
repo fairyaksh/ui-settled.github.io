@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap">
 </head>
 <body>
+    <img src="./assets/back-arrow.svg" alt="Go back to the previous page by clicking this icon">
     <header>
         <h1>My profile</h1>
         <p>Your running progress and goals.</p>
@@ -22,6 +23,9 @@
             <p class="faded-text">
                 <span>You’ve nearly reached your</span>
                 <span>target! 🙌</span>
+                <div>
+                    <img class="remove-alert" src="./assets/close.svg" alt="Go back to the previous page by clicking this icon">
+                </div>
             </p>
         </div>
         <div class="progress-wrapper">
@@ -29,7 +33,9 @@
                 <h3>20k weekly target</h3>
                 <p class="progress-number">80%</p>
             </div>
-            <progress value="80" max="100"></progress>
+            <div class="progress-bar">
+                <progress value="80" max="100"></progress>
+            </div>
         </div>
         <div class="distance-form">
             <form>
@@ -46,9 +52,6 @@
                 Read our FAQs
             </button>
         </div>
-
     </main>
-
-
 </body>
 </html>

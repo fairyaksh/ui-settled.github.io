@@ -15,6 +15,11 @@ body {
     padding: 32px;
 }
 
+/* ----- Header Icon area ----- */
+img {
+    cursor: pointer;
+}
+
 /* ----- Navigation area ----- */
 h1 {
     font-weight: 500;
@@ -57,7 +62,6 @@ h2 {
     position: relative;
     margin-top: 40px;
 }
-
 .faded-text {
     font-weight: 500;
     color: var(--faded-font-color); 
@@ -65,9 +69,13 @@ h2 {
     padding: 16px;
     margin: 0 auto;
 }
-
 p span {
     display: block;
+}
+.remove-alert {
+    position: absolute;
+    right: 25px;
+    bottom: 45px;
 }
 
 /* ----- Progress Tracker Section ----- */
@@ -82,7 +90,7 @@ p span {
 }
 h3 {
     font-weight: 500;
-    font-size: 16px;
+    font-size: 15px;
     margin-bottom: 8px;
 }
 progress {
@@ -113,6 +121,9 @@ progress::-moz-progress-value {
 }
 
 /* ----- Distance Form ----- */
+label {
+    font-weight: 500;
+}
 .distance-text {
     font-weight: 500;
     color: var(--faded-font-color); 
@@ -150,6 +161,7 @@ input[type=button] {
     color: rgb(255, 255, 255);
     font-size: 18px;
     font-weight: 600;
+    cursor: pointer;
 }
 
 /* ----- FAQ Button ----- */
@@ -166,7 +178,84 @@ button {
     width: 220px;
     height: 48px;
     margin-top: 100px;
+    cursor: pointer;
 }
+
+/* ----- Media Queries ----- */
+
+/* ----- Mobile screen sizes ----- */
+@media only screen and (max-width: 414px) {
+    .alert-box {
+        width: 95%;
+    }
+    progress {
+      width: 98%;
+    }
+    progress::-webkit-progress-bar {
+        width: 98%;
+    }
+    progress::-moz-progress-bar {
+        width: 98%;
+    }
+}
+@media only screen and (max-width: 332px) {
+    header > p {
+        font-size: 14px;
+    }
+    .faded-text {
+        font-size: 14px;
+    }
+    .alert-box {
+        width: 100%;
+    }
+    progress {
+      width: 98%;
+    }
+    progress::-webkit-progress-bar {
+        width: 98%;
+    }
+    progress::-moz-progress-bar {
+        width: 98%;
+    }
+    input[type=text] {
+        width: 50%;
+    }
+    .remove-alert {
+        width: 10px;
+        top: 15px;
+        right: 20px;
+    }
+}
+
+/* ----- Desktop screen sizes ----- */
+@media only screen and (min-width: 414px) {
+    .alert-box {
+        margin: auto;
+        margin-top: 40px;
+
+    }
+    main {
+        text-align: center;
+    }
+    .faded-text {
+        left: 50px;
+    }
+    .progress-wrapper {
+        text-align: center;
+    }
+    .progress-info {
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav {
+        justify-content: space-around;
+    }
+    h1, header > p {
+        text-align: center;
+    }
+}
+
 
 /* ----- Extra styles I've added ----- */
 
